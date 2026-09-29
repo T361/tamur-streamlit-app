@@ -1,24 +1,16 @@
-# Tamur Streamlit App
+# Streamlit Pathfinding Visualizer
 
-Interactive visualization of **Greedy Best-First Search (GBFS)** and **A\*** pathfinding algorithms, built with Streamlit and NetworkX (Lab 06).
+Interactive visualization of **Greedy Best-First Search (GBFS)** and **A\*** pathfinding algorithms, built with Streamlit and NetworkX.
 
 ## Features
 
 - Choose the start node from a dropdown menu
 - Choose the goal node from a dropdown menu
 - Select the search algorithm: **GBFS** or **A\***
-- Visualize the graph with NetworkX, with the solution path highlighted
-- View the algorithm, solution path, expansion order, and total path cost
+- Visualize the hospital graph with NetworkX, with the solution path highlighted
+- View the algorithm, expansion order, solution path, and total path cost
 
-## Run the App
-
-```sh
-./run.sh
-```
-
-`run.sh` installs all dependencies into a virtual environment automatically on the first run (via `setup.sh`).
-
-Or manually:
+## Run Locally
 
 ```sh
 python3 -m venv .venv
@@ -27,13 +19,9 @@ pip install -r requirements.txt
 streamlit run streamlit_app.py
 ```
 
-## Files
+## Deploy to Streamlit Community Cloud
 
-| File               | Purpose                                        |
-| ------------------ | ---------------------------------------------- |
-| `streamlit_app.py` | The Streamlit GUI and GBFS/A* implementations  |
-| `lab06.ipynb`      | Lab notebook with the underlying tasks         |
-| `requirements.txt` | Python dependencies                            |
-| `setup.sh`         | Creates a venv and downloads all libraries     |
-| `run.sh`           | Starts the Streamlit app                       |
-| `run.txt`          | One-line command to run the Streamlit app      |
+1. Push this repository to GitHub.
+2. Go to [share.streamlit.io](https://share.streamlit.io) and click **New app**.
+3. Select this GitHub repository, branch `main`, and main file `streamlit_app.py`.
+4. Click **Deploy** — Streamlit Cloud installs `requirements.txt` automatically.

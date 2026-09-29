@@ -10,3 +10,9 @@ __pycache__/
 
 # OS
 .DS_Store
+
+# Local-only files (not part of the deployed app)
+run.sh
+setup.sh
+run.txt
+lab06.ipynb
